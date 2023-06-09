@@ -2,7 +2,10 @@ import React from 'react';
 
 function Book() {
   return (
-    <div>Book</div>
+    <>
+      <h3>Book</h3>
+      <button type="submit">Delete Book</button>
+    </>
   );
 }
 
