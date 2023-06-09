@@ -2,7 +2,11 @@ import React from 'react';
 
 function NewBook() {
   return (
-    <div>NewBook</div>
+    <form action="">
+      <input type="text" id="title" />
+      <input type="text" id="author" />
+      <input type="submit" value="New Book" />
+    </form>
   );
 }
 
