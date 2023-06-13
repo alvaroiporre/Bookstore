@@ -116,7 +116,7 @@ To run tests, execute the following command:
 👤 **Álvaro Iporre Martínez**
 
 - GitHub: [@ralvaroiporre](https://github.com/alvaroiporre)
-- Twitter: [@alvaro.iporre](https://twitter.com/twitterhandle)
+- Twitter: [@alvaro.iporre](https://twitter.com/Alvaro41065582)
 - LinkedIn: [Álvaro Iporre Martínez](https://www.linkedin.com/in/%C3%A1lvaro-iporre-mart%C3%ADnez-5b05bb141/)
 
 
