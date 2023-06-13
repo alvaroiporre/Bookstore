@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   value: [],
@@ -8,11 +8,13 @@ export const booksSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
-    addBook: (state, book) => {
-      state.value.push(book);
+    addBook: (state, action) => {
+      const newBook = action.payload;
+      state.value.push(newBook);
     },
-    removeBook: (state, id) => {
-      state.value = state.value.filter((x) => x.id !== id);
+    removeBook: (state, action) => {
+      const bookId = action.payload;
+      state.value = state.value.filter((x) => x.id !== bookId);
     },
   },
 });

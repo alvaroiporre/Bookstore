@@ -55,9 +55,7 @@ This is a web app developed in React.js
 ### Future Features <a name="future-features"></a>
 
 - **Add fucntionality**
-- **Add components**
-- **Add Description**
--
+- **Add Redux to Components**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
