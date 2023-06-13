@@ -55,9 +55,7 @@ This is a web app developed in React.js
 ### Future Features <a name="future-features"></a>
 
 - **Add fucntionality**
-- **Add components**
-- **Add Description**
--
+- **Add Redux to Components**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
@@ -118,7 +116,7 @@ To run tests, execute the following command:
 👤 **Álvaro Iporre Martínez**
 
 - GitHub: [@ralvaroiporre](https://github.com/alvaroiporre)
-- Twitter: [@alvaro.iporre](https://twitter.com/twitterhandle)
+- Twitter: [@alvaro.iporre](https://twitter.com/Alvaro41065582)
 - LinkedIn: [Álvaro Iporre Martínez](https://www.linkedin.com/in/%C3%A1lvaro-iporre-mart%C3%ADnez-5b05bb141/)
 
 
