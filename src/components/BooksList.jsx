@@ -5,7 +5,6 @@ import NewBook from './NewBook';
 
 function BooksList() {
   const data = useSelector((state) => state.books);
-  console.log(data.value);
   return (
     <div>
       <h2>Books list</h2>
