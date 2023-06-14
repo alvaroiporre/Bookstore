@@ -1,17 +1,23 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Book from './Book';
-
-const data = [
-  { title: 'one book', author: 'one author' },
-  { title: 'second book', author: 'second author' }];
+import NewBook from './NewBook';
 
 function BooksList() {
+  const data = useSelector((state) => state.books);
   return (
-    <>
-      {data.forEach((book) => {
-        <Book title={book.title} author={book.author} />;
-      })}
-    </>
+    <div>
+      <h2>Books list</h2>
+      <ul>
+        {data.value.map((book) => (
+          <Book
+            key={book.item_id}
+            book={book}
+          />
+        ))}
+      </ul>
+      <NewBook />
+    </div>
   );
 }
 
