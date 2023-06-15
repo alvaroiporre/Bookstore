@@ -162,12 +162,22 @@ body {
 }
 
 .Oval-2 {
-  width: 4.25rem;
-  height: 4.25rem;
-  border-style: solid;
-  border-width: 5px;
-  border-image-source: linear-gradient(to bottom, var(--medium-blue), #379cf6);
-  border-image-slice: 1;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: conic-gradient(var(--medium-blue) 36deg, #c4c4c4 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Oval-2::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: var(--white-two);
 }
 
 .number-percentage {
