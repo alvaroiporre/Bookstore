@@ -18,8 +18,7 @@ export const booksSlice = createSlice({
     },
     removeBook: (state, action) => {
       const bookId = action.payload;
-      console.log(bookId);
-      state.value = state.value.filter((x) => x.item_id !== bookId);
+      state.value = state.value.filter((x) => x[0] !== bookId);
     },
   },
 });
@@ -33,6 +32,17 @@ export const fetchBooks = () => (dispatch) => {
     .get('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ZRWdjTtEajZlG1AM3x6j/books')
     .then((response) => {
       dispatch(getBooks(Object.entries(response.data)));
+    })
+    .catch((error) => console.error(error));
+};
+
+export const fetchRemoveBook = (bookId) => (dispatch) => {
+  axios
+    .delete(`https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ZRWdjTtEajZlG1AM3x6j/books/${bookId}`)
+    .then((response) => {
+      if (response.data === 'The book was deleted successfully!') {
+        dispatch(removeBook(bookId));
+      }
     })
     .catch((error) => console.error(error));
 };
