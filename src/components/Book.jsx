@@ -6,14 +6,14 @@ import { removeBook } from '../redux/books/booksSlice';
 function Book({ book }) {
   const dispatch = useDispatch();
   const handleDeleteBook = () => {
-    dispatch(removeBook(book.item_id));
+    dispatch(removeBook(book[0]));
   };
 
   return (
     <li>
-      <h3>{book.title}</h3>
-      <h4>{book.author}</h4>
-      <p>{book.category}</p>
+      <h3>{book[1][0].title}</h3>
+      <h4>{book[1][0].author}</h4>
+      <p>{book[1][0].category}</p>
       <button type="submit" onClick={handleDeleteBook}>Delete Book</button>
     </li>
   );
