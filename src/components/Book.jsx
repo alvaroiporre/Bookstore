@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../index.css';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/booksSlice';
 
@@ -10,11 +11,32 @@ function Book({ book }) {
   };
 
   return (
-    <li>
-      <h3>{book.title}</h3>
-      <h4>{book.author}</h4>
-      <p>{book.category}</p>
-      <button type="submit" onClick={handleDeleteBook}>Delete Book</button>
+    <li className="book-list">
+      <div>
+        <p className="category">{book.category}</p>
+        <h3 className="book-title">{book.title}</h3>
+        <h4 className="author">{book.author}</h4>
+        <div className="actions">
+          <button type="submit">Comments</button>
+          <span className="Line-2" />
+          <button type="submit" onClick={handleDeleteBook}>Remove</button>
+          <span className="Line-2" />
+          <button type="submit">Edit</button>
+        </div>
+      </div>
+      <div className="percentage">
+        <span className="Oval-2" />
+        <div>
+          <p className="number-percentage">64%</p>
+          <p className="completed">Completed</p>
+        </div>
+      </div>
+      <span className="Line-3" />
+      <div>
+        <h4 className="current-chapter">CURRENT CHAPTER</h4>
+        <p className="chapter-num">Chapter 17</p>
+        <a className="update-progress" href="#">UPDATE PROGRESS</a>
+      </div>
     </li>
   );
 }

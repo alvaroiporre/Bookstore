@@ -26,32 +26,34 @@ function NewBook() {
     }
   };
   return (
-    <form action="" className="add-book-form">
-      <h3>Add new Book</h3>
-      <input
-        type="text"
-        id="title"
-        placeholder="Title"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
-      <input
-        type="text"
-        id="author"
-        placeholder="Author"
-        value={author}
-        onChange={(e) => setAuthor(e.target.value)}
-      />
-      <input
-        type="text"
-        id="category"
-        placeholder="Category"
-        value={category}
-        onChange={(e) => setCategory(e.target.value)}
-      />
-      <input type="submit" value="New Book" onClick={handlerAddBook} />
-      {error && <p className="error">Please fill all the fields</p>}
-    </form>
+    <>
+      <h3 className="subtitle">ADD NEW BOOK</h3>
+      <form action="" className="add-book-form">
+        <input
+          type="text"
+          id="title"
+          placeholder="Title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <input
+          type="text"
+          id="author"
+          placeholder="Author"
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
+        />
+        <input
+          type="text"
+          id="category"
+          placeholder="Category"
+          value={category}
+          onChange={(e) => setCategory(e.target.value)}
+        />
+        <input className="button-new-book" type="submit" value="New Book" onClick={handlerAddBook} />
+        {error && <p className="error">Please fill all the fields</p>}
+      </form>
+    </>
   );
 }
 

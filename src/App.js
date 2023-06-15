@@ -1,4 +1,3 @@
-import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Categories from './components/Categories';
 import Navbar from './components/Navbar';
@@ -18,9 +17,8 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="header">
         <Navbar />
-        <h1>Bookstore</h1>
       </header>
       <main>
         <RouterProvider router={router} />
