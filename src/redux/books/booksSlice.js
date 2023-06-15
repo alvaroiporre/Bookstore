@@ -27,6 +27,9 @@ export const booksSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
+    getBooks: (state, action) => {
+      state.value = action.payload;
+    },
     addBook: (state, action) => {
       const newBook = action.payload;
       state.value = [...state.value, newBook];
@@ -41,3 +44,7 @@ export const booksSlice = createSlice({
 export const { addBook, removeBook } = booksSlice.actions;
 
 export default booksSlice.reducer;
+
+export const fetchBooks = () => (dispatch) => {
+  
+};
