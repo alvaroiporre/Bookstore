@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-import formatObject from '../../tools/formatObject.js';
+import formatObject from '../../tools/formatObject';
 
 const initialState = {
   value: [],
@@ -33,8 +33,7 @@ export const fetchBooks = () => (dispatch) => {
     .get('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ZRWdjTtEajZlG1AM3x6j/books')
     .then((response) => {
       dispatch(getBooks(formatObject(response.data)));
-    })
-    .catch((error) => console.error(error));
+    });
 };
 
 export const fetchRemoveBook = (bookId) => (dispatch) => {
@@ -44,8 +43,7 @@ export const fetchRemoveBook = (bookId) => (dispatch) => {
       if (response.data === 'The book was deleted successfully!') {
         dispatch(removeBook(bookId));
       }
-    })
-    .catch((error) => console.error(error));
+    });
 };
 
 export const fetchAddBook = (book) => (dispatch) => {
@@ -55,6 +53,5 @@ export const fetchAddBook = (book) => (dispatch) => {
       if (response.data === 'Created') {
         dispatch(addBook(book));
       }
-    })
-    .catch((error) => console.error(error));
+    });
 };

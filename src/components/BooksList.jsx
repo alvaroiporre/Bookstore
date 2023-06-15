@@ -11,14 +11,14 @@ function BooksList() {
 
   useEffect(() => {
     dispatch(fetchBooks());
-  }, []);
+  }, [dispatch]);
   return (
     <div>
       <h2>Books list</h2>
       <ul>
         {data.map((book) => (
           <Book
-            key={book[0]}
+            key={book.item_id}
             book={book}
           />
         ))}
