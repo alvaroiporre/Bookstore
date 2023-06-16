@@ -50,7 +50,7 @@ function NewBook() {
           value={category}
           onChange={(e) => setCategory(e.target.value)}
         />
-        <input className="button-new-book" type="submit" value="New Book" onClick={handlerAddBook} />
+        <input className="button-new-book" type="submit" value="ADD BOOK" onClick={handlerAddBook} />
         {error && <p className="error">Please fill all the fields</p>}
       </form>
     </>

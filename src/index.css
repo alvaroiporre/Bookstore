@@ -36,7 +36,6 @@ body {
 }
 
 .header {
-  width: 100%;
   padding: 1.5rem;
   background-color: var(--white-two);
   display: flex;
@@ -81,8 +80,6 @@ body {
 }
 
 .book-list {
-  width: 90%;
-  height: 10.625rem;
   margin: 5%;
   padding: 24px;
   border-radius: 4px;
@@ -95,7 +92,7 @@ body {
 }
 
 .book-data {
-  flex-grow: 6;
+  flex-grow: 4;
 }
 
 .category {
@@ -148,10 +145,16 @@ body {
   border: solid 1px var(--white-three);
 }
 
+.actions {
+  margin: 25px 0 0;
+  padding: 0;
+}
+
 .actions button {
   width: 4.563rem;
   height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
+  padding: 0;
   font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   font-weight: 300;
@@ -170,8 +173,11 @@ body {
   justify-content: center;
 }
 
+.percentage-data {
+  padding: 20px;
+}
 .chapters {
-  flex-grow: 2;
+  flex-grow: 3;
 }
 .Oval-2 {
   width: 60px;
@@ -194,6 +200,7 @@ body {
 
 .number-percentage {
   height: 2.438rem;
+  margin: 20px 0;
   font-family: Montserrat;
   font-size: 2rem;
   font-weight: normal;
@@ -224,7 +231,7 @@ body {
 }
 
 .current-chapter {
-  height: 1.125rem;
+  margin: 0;
   opacity: 0.5;
   font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
@@ -238,6 +245,7 @@ body {
 
 .chapter-num {
   height: 1.313rem;
+  margin: 5px 0 15px;
   font-family: 'Roboto Slab', serif;
   font-size: 1rem;
   font-weight: 300;
@@ -249,8 +257,8 @@ body {
 }
 
 .update-progress {
-  height: 2.063rem;
   padding: 10px;
+  margin: 10px 0;
   border-radius: 3px;
   background-color: var(--azure);
   text-decoration: none;
@@ -271,7 +279,7 @@ body {
 
 .subtitle {
   height: 1.5rem;
-  margin: 2.313rem 6.25rem 0;
+  margin: 5%;
   font-family: Montserrat;
   font-size: 1.25rem;
   font-weight: bold;
@@ -284,7 +292,7 @@ body {
 
 form input {
   width: 20%;
-  height: 2.813rem;
+  height: 1.5rem;
   padding: 10px;
   border-radius: 4px;
   border: solid 1px var(--white-three);
@@ -292,7 +300,6 @@ form input {
 }
 
 form input::placeholder {
-  height: 1.188rem;
   font-family: Montserrat;
   font-size: 1rem;
   font-weight: normal;
@@ -304,9 +311,8 @@ form input::placeholder {
 }
 
 .button-new-book {
-  width: 2fr;
-  height: 2.813rem;
-  padding: 10px;
+  height: 3rem;
+  padding: 15px;
   border-radius: 3px;
   background-color: var(--azure);
   font-family: 'Roboto Slab', serif;
@@ -318,4 +324,8 @@ form input::placeholder {
   letter-spacing: 0.5px;
   text-align: center;
   color: var(--white-two);
+}
+
+#title {
+  flex-grow: 2;
 }

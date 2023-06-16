@@ -28,7 +28,7 @@ function Book({ book }) {
       </div>
       <div className="percentage">
         <div className="Oval-2" />
-        <div>
+        <div className="percentage-data">
           <p className="number-percentage">64%</p>
           <p className="completed">Completed</p>
         </div>
