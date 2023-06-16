@@ -17,7 +17,8 @@
 
 body {
   width: 100%;
-  padding: 0 0 5.625rem;
+  padding: 0;
+  margin: 0;
   border-radius: 4px;
   background-color: var(--white);
 }
@@ -36,11 +37,11 @@ body {
 
 .header {
   width: 100%;
-  padding: 1.5rem 6.25rem;
+  padding: 1.5rem;
   background-color: var(--white-two);
   display: flex;
   justify-content: flex-start;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 5px;
 }
 
 .navbar {
@@ -56,7 +57,6 @@ body {
 
 .navbar li a {
   text-decoration: none;
-  width: 3.688rem;
   height: 1rem;
   font-family: Montserrat;
   font-size: 0.813rem;
@@ -69,11 +69,11 @@ body {
 }
 
 .add-book-form {
-  display: grid;
-  width: 100%;
+  display: flex;
+  width: 90%;
   align-items: center;
-  margin: 2.313rem 6.25rem 0;
-  grid-template-rows: repeat(10, 1fr);
+  margin: 5% 5% 500px;
+  gap: 10px;
 }
 
 .books-container ul {
@@ -81,15 +81,17 @@ body {
 }
 
 .book-list {
-  width: 70%;
+  width: 90%;
   height: 10.625rem;
-  margin: 2.313rem 6.25rem 0;
-  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  margin: 5%;
+  padding: 24px;
   border-radius: 4px;
   border: solid 1px var(--white-three);
   background-color: var(--white-two);
   list-style: none;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .book-data {
@@ -164,6 +166,8 @@ body {
 .percentage {
   display: flex;
   flex-grow: 2;
+  align-items: center;
+  justify-content: center;
 }
 
 .chapters {
@@ -246,6 +250,7 @@ body {
 
 .update-progress {
   height: 2.063rem;
+  padding: 10px;
   border-radius: 3px;
   background-color: var(--azure);
   text-decoration: none;
@@ -278,18 +283,16 @@ body {
 }
 
 form input {
+  width: 20%;
   height: 2.813rem;
-  margin: 1.188rem 2.125rem 0 0;
-  padding: 0.813rem 35.688rem 0.813rem 1.063rem;
+  padding: 10px;
   border-radius: 4px;
   border: solid 1px var(--white-three);
   background-color: var(--white-two);
 }
 
 form input::placeholder {
-  width: 4.5rem;
   height: 1.188rem;
-  margin: 0.438rem 10.438rem 0.25rem 0;
   font-family: Montserrat;
   font-size: 1rem;
   font-weight: normal;
@@ -301,10 +304,9 @@ form input::placeholder {
 }
 
 .button-new-book {
-  width: 11.5rem;
+  width: 2fr;
   height: 2.813rem;
-  margin: 1.188rem 0 0 2.125rem;
-  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  padding: 10px;
   border-radius: 3px;
   background-color: var(--azure);
   font-family: 'Roboto Slab', serif;
