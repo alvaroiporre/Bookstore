@@ -13,8 +13,7 @@ function BooksList() {
     dispatch(fetchBooks());
   }, [dispatch]);
   return (
-    <div>
-      <h2>Books list</h2>
+    <div className="books-container">
       <ul>
         {data.map((book) => (
           <Book
@@ -23,6 +22,7 @@ function BooksList() {
           />
         ))}
       </ul>
+      <span className="Line" />
       <NewBook />
     </div>
   );
