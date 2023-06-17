@@ -12,7 +12,7 @@ function Book({ book }) {
 
   return (
     <li className="book-list">
-      <div>
+      <div className="book-text">
         <div className="book-data">
           <p className="category">{book.category}</p>
           <h3 className="book-title">{book.title}</h3>
